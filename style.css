@@ -346,13 +346,13 @@ img {
     font-size: 2vw;
   }
   
-  #VD_logo {
-  width: 12vw;
-  }
-
 #welcome-section h2{
   font-size: 3.5vw;
 }
+
+  img{
+  width: 100px;
+  }
 
 
   /* END FOR MOBILE PHONES */
