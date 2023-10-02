@@ -1,0 +1,323 @@
+html {
+  box-sizing: border-box;
+  font-size: 14px;
+  background-color: white;
+  color: black;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  color: gray;
+  background-color: gray;
+  line-height: 1.4;
+  width: 100%;
+  display: grid;
+}
+
+/* Nav Bar */
+header {
+  position: fixed;
+  top: 0px;
+  width: 100%;
+
+  height: 19px;
+  padding: 25px 10px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  background-color: black;
+  opacity: 0.7;
+
+  z-index: 5;
+}
+
+header a {
+  margin-right: 2rem;
+  color: white;
+
+  text-decoration: none;
+  z-index: 5;
+}
+
+header a:hover {
+  margin-right: 2rem;
+  color: white;
+
+  text-decoration: underline;
+  z-index: 5;
+}
+
+header h3 {
+  margin-right: 2rem;
+  color: white;
+
+  text-decoration: none;
+}
+/* Nav Bar */
+
+/* Welcome Section */
+
+#welcome-section {
+  width: 100%;
+  height: 100vh;
+
+  position: absolute;
+  top: 5vw;
+  left: 0vw;
+  z-index: 2;
+}
+
+#welcome-section h1 {
+  text-align: left;
+  font-size: 2vw;
+  color: black;
+
+  position: absolute;
+  top: -3vw;
+  left: 0vw;
+}
+
+#welcome-section h2 {
+  text-align: left;
+  font-size: 2.5vw;
+  color: black;
+
+  position: absolute;
+  top: 0vw;
+  left: 0vw;
+
+  border-bottom: 1px solid black;
+  padding-bottom: 3px;
+  border-bottom-width: 1px;
+
+  word-spacing: 2px;
+  letter-spacing: 5px;
+}
+
+#welcome-section p {
+  text-align: left;
+  color: black;
+  font-size: 1.5vw;
+
+  position: absolute;
+  top: 10vw;
+}
+
+#Personal-Photo {
+  position: absolute;
+  top: 10vw;
+  left: 75vw;
+
+  height: auto;
+}
+
+/* Welcome Section */
+
+/* Projects Section */
+#projects {
+  width: 100%;
+  height: auto;
+
+  position: absolute;
+  top: 30vw;
+  left: 0vw;
+  z-index: 2;
+}
+
+#projects h3 {
+  text-align: left;
+  font-size: 2vw;
+  color: black;
+
+  position: absolute;
+  top: 2vw;
+  left: 2vw;
+
+  border-bottom: 1px solid #40e0d0;
+  border-bottom-width: 1px;
+
+  word-spacing: 2px;
+  letter-spacing: 5px;
+}
+
+#projectsbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  position: absolute;
+  top: 15vw;
+  left: 2vw;
+
+  width: 100%;
+  height: auto;
+
+  font-size: 2vw;
+  word-spacing: 2px;
+  letter-spacing: 5px;
+}
+
+#projectsbar a {
+  margin-right: 11vw;
+  margin-left: 11vw;
+  color: black;
+
+  text-decoration: none;
+  z-index: 2;
+}
+
+#projectsbar a:hover {
+  margin-right: 11vw;
+  margin-left: 11vw;
+  color: gray;
+  filter: brightness(120%);
+  font-weight: bold;
+  z-index: 2;
+}
+/* Projects Section */
+
+
+
+/* Skills Section */
+#skills {
+  width: 100%;
+  height: auto;
+  color: black;
+
+  position: absolute;
+  top: 70vw;
+  left: 0vw;
+  z-index: 2;
+  padding-left: 2%;
+}
+
+#skills h3 {
+  text-align: left;
+  font-size: 2vw;
+  color: black;
+
+  position: absolute;
+  top: 2vw;
+  left: 2vw;
+
+  border-bottom: 1px solid #40e0d0;
+  border-bottom-width: 1px;
+
+  word-spacing: 2px;
+  letter-spacing: 5px;
+}
+
+#skillsbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  position: absolute;
+  top: 15vw;
+  left: -5vw;
+
+  width: 100%;
+  height: auto;
+
+  font-size: 2vw;
+  word-spacing: 2px;
+  letter-spacing: 5px;
+ 
+}
+
+#skills img{
+  
+  padding-left: 5em;
+}
+
+
+
+
+/* Skills Section */
+
+/* Footer */
+#footer {
+  width: 100%;
+  height: auto;
+
+  position: absolute;
+  top: 110vw;
+  left: 22vw;
+  z-index: 2;
+
+ 
+
+}
+
+
+
+#footer p {
+  text-align: left;
+  font-size: 1.5vw;
+  color: black;
+
+  position: absolute;
+  top: 2vw;
+  left: 19vw;
+
+  border-bottom: 1px solid gray;
+  border-bottom-width: 1px;
+
+  word-spacing: 2px;
+  letter-spacing: 5px;
+
+ 
+}
+
+#Emeka-LinkedIn {
+  width: 5vw;
+  text-align: left;
+
+  position: absolute;
+  top: 10vw;
+  left: 15vw;
+
+  opacity: 0.85;
+  z-index: 3;
+
+}
+
+#Emeka-GitHub {
+  width: 5vw;
+  text-align: left;
+
+  position: absolute;
+  top: 10vw;
+  left: 25vw;
+
+  opacity: 0.85;
+  z-index: 3;
+  
+}
+
+#Emeka-Email {
+  width: 5vw;
+  text-align: left;
+
+  position: absolute;
+  top: 10vw;
+  left: 35vw;
+
+  opacity: 0.85;
+  z-index: 3;
+  
+}
+
+#footer a:hover {
+
+  color: gray;
+  filter: brightness(200%);
+  font-weight: bold;
+  z-index: 2;
+}
+
+img {
+  width: 350px;
+}
