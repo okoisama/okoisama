@@ -1,6 +1,6 @@
 html {
   box-sizing: border-box;
-  font-size: 14px;
+  font-size: 1vw;  /* Base font size as 1% of viewport width */
   background-color: white;
   color: black;
 }
@@ -8,327 +8,188 @@ html {
 body {
   font-family: "Open Sans", sans-serif;
   color: gray;
-  background-color: gray;
+  background-color: rgb(252, 252, 252);
   line-height: 1.4;
-  width: 100%;
-  display: grid;
+  width: 100vw;
+  overflow-x: hidden;
 }
 
 /* Nav Bar */
 header {
   position: fixed;
-  top: 0px;
-  width: 100%;
-
-  height: 19px;
-  padding: 25px 10px;
-
+  top: 0;
+  width: 100vw;
+  height: 5vh;
+  padding: 2vh 1vw;
   display: flex;
   justify-content: space-between;
   align-items: center;
-
-  background-color: black;
-  opacity: 0.7;
-
+  background-color: rgba(0, 0, 0, 0.7);
   z-index: 5;
 }
 
 header a {
-  margin-right: 2rem;
+  margin-right: 2vw;
   color: white;
-
   text-decoration: none;
-  z-index: 5;
+  font-size: 1.5vw;
 }
 
 header a:hover {
-  margin-right: 2rem;
-  color: white;
-
   text-decoration: underline;
-  z-index: 5;
 }
 
 header h3 {
-  margin-right: 2rem;
+  margin-right: 2vw;
   color: white;
-
-  text-decoration: none;
+  font-size: 1.5vw;
 }
-/* Nav Bar */
 
 /* Welcome Section */
-
 #welcome-section {
-  width: 100%;
+  width: 100vw;
   height: 100vh;
-
-  position: absolute;
-  top: 5vw;
-  left: 0vw;
-  z-index: 2;
+  position: relative;
+  padding-top: 10vh;
 }
 
 #welcome-section h1 {
-  text-align: left;
   font-size: 2vw;
   color: black;
-
-  position: absolute;
-  top: -3vw;
-  left: 0vw;
+  margin-left: 2vw;
 }
 
 #welcome-section h2 {
-  text-align: left;
   font-size: 2.5vw;
   color: black;
-
-  position: absolute;
-  top: 0vw;
-  left: 0vw;
-
-  border-bottom: 1px solid black;
-  padding-bottom: 3px;
-  border-bottom-width: 1px;
-
-  word-spacing: 2px;
-  letter-spacing: 5px;
+  margin-left: 2vw;
+  border-bottom: 0.1vw solid black;
+  padding-bottom: 0.3vw;
+  word-spacing: 0.2vw;
+  letter-spacing: 0.5vw;
 }
 
 #welcome-section p {
-  text-align: left;
-  color: black;
   font-size: 1.5vw;
-
-  position: absolute;
-  top: 10vw;
+  color: black;
+  margin-left: 2vw;
+  margin-top: 5vh;
+  max-width: 80vw;
 }
 
 #Personal-Photo {
   position: absolute;
-  top: 10vw;
-  left: 75vw;
-
+  top: 40vh;
+  right: 5vw;
+  width: 20vw;
   height: auto;
 }
-
-/* Welcome Section */
 
 /* Projects Section */
 #projects {
-  width: 100%;
-  height: auto;
-
-  position: absolute;
-  top: 30vw;
-  left: 0vw;
-  z-index: 2;
+  width: 100vw;
+  padding: 5vh 2vw;
+  position: relative;
+  margin-top: 20vh;
 }
 
 #projects h3 {
-  text-align: left;
   font-size: 2vw;
   color: black;
-
-  position: absolute;
-  top: 2vw;
-  left: 2vw;
-
-  border-bottom: 1px solid #40e0d0;
-  border-bottom-width: 1px;
-
-  word-spacing: 2px;
-  letter-spacing: 5px;
+  border-bottom: 0.1vw solid #40e0d0;
+  display: inline-block;
+  margin-bottom: 5vh;
 }
 
 #projectsbar {
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
-
-  position: absolute;
-  top: 15vw;
-  left: 2vw;
-
   width: 100%;
-  height: auto;
-
-  font-size: 2vw;
-  word-spacing: 2px;
-  letter-spacing: 5px;
 }
 
 #projectsbar a {
-  margin-right: 11vw;
-  margin-left: 11vw;
   color: black;
-
   text-decoration: none;
-  z-index: 2;
+  font-size: 2vw;
+  text-align: center;
 }
 
 #projectsbar a:hover {
-  margin-right: 11vw;
-  margin-left: 11vw;
   color: gray;
   filter: brightness(120%);
   font-weight: bold;
-  z-index: 2;
 }
-/* Projects Section */
 
-
+#projectsbar img {
+  width: 30vw;
+  height: auto;
+}
 
 /* Skills Section */
 #skills {
-  width: 100%;
-  height: auto;
+  width: 100vw;
+  padding: 5vh 2vw;
   color: black;
-
-  position: absolute;
-  top: 70vw;
-  left: 0vw;
-  z-index: 2;
-  padding-left: 2%;
+  margin-top: 10vh;
 }
 
 #skills h3 {
-  text-align: left;
   font-size: 2vw;
   color: black;
-
-  position: absolute;
-  top: 2vw;
-  left: 2vw;
-
-  border-bottom: 1px solid #40e0d0;
-  border-bottom-width: 1px;
-
-  word-spacing: 2px;
-  letter-spacing: 5px;
+  border-bottom: 0.1vw solid #40e0d0;
+  display: inline-block;
+  margin-bottom: 5vh;
 }
 
 #skillsbar {
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
-
-  position: absolute;
-  top: 15vw;
-  left: -5vw;
-
   width: 100%;
+}
+
+#skills img {
+  width: 15vw;
   height: auto;
-
-  font-size: 2vw;
-  word-spacing: 2px;
-  letter-spacing: 5px;
- 
 }
 
-#skills img{
-  
-  padding-left: 5em;
+#skillsbar a {
+  color: black;
+  text-decoration: none;
+  font-size: 1.5vw;
+  text-align: center;
 }
-
-
-
-
-/* Skills Section */
 
 /* Footer */
 #footer {
-  width: 100%;
-  height: auto;
-
-  position: absolute;
-  top: 110vw;
-  left: 22vw;
-  z-index: 2;
-
- 
-
+  width: 100vw;
+  padding: 5vh 0;
+  margin-top: 10vh;
+  text-align: center;
 }
-
-
 
 #footer p {
-  text-align: left;
   font-size: 1.5vw;
   color: black;
-
-  position: absolute;
-  top: 2vw;
-  left: 19vw;
-
-  border-bottom: 1px solid gray;
-  border-bottom-width: 1px;
-
-  word-spacing: 2px;
-  letter-spacing: 5px;
-
- 
+  border-bottom: 0.1vw solid gray;
+  display: inline-block;
+  padding-bottom: 1vh;
+  margin-bottom: 3vh;
 }
 
-#Emeka-LinkedIn {
+#footer img {
   width: 5vw;
-  text-align: left;
-
-  position: absolute;
-  top: 10vw;
-  left: 15vw;
-
   opacity: 0.85;
-  z-index: 3;
-
+  margin: 0 2vw;
 }
 
-#Emeka-GitHub {
-  width: 5vw;
-  text-align: left;
-
-  position: absolute;
-  top: 10vw;
-  left: 25vw;
-
-  opacity: 0.85;
-  z-index: 3;
-  
+#footer img:hover {
+  opacity: 1;
 }
 
-#Emeka-Email {
-  width: 5vw;
-  text-align: left;
-
-  position: absolute;
-  top: 10vw;
-  left: 35vw;
-
-  opacity: 0.85;
-  z-index: 3;
-  
-}
-
-#footer a:hover {
-
-  color: gray;
-  filter: brightness(200%);
-  font-weight: bold;
-  z-index: 2;
-}
-
+/* Ensure images don't exceed their container */
 img {
-  width: 350px;
+  max-width: 100%;
+  height: auto;
 }
-
-
-
-/* START FOR MOBILE PHONES */
-@media only screen and (max-width: 800px) 
-{
-   
-  }
-
-
-  /* END FOR MOBILE PHONES */
