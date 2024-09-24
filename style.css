@@ -9,7 +9,7 @@ body {
   font-family: "Open Sans", sans-serif;
   color: gray;
   background-color: rgb(255, 255, 255);
-  line-height: 1.4;
+  line-height: 1.2;
   width: 100vw;
   overflow-x: hidden;
 }
@@ -32,7 +32,7 @@ header a {
   margin-right: 2vw;
   color: white;
   text-decoration: none;
-  font-size: 1.5vw;
+  font-size: 1vw;
 }
 
 header a:hover {
@@ -42,25 +42,25 @@ header a:hover {
 header h3 {
   margin-right: 2vw;
   color: white;
-  font-size: 1.5vw;
+  font-size: 1.3vw;
 }
 
 /* Welcome Section */
 #welcome-section {
   width: 100vw;
-  height: 100vh;
+  height: 10vh;
   position: relative;
   padding-top: 10vh;
 }
 
 #welcome-section h1 {
-  font-size: 2vw;
+  font-size: 1.2vw;
   color: black;
   margin-left: 2vw;
 }
 
 #welcome-section h2 {
-  font-size: 2.5vw;
+  font-size: 2vw;
   color: black;
   margin-left: 2vw;
   border-bottom: 0.1vw solid black;
@@ -70,13 +70,13 @@ header h3 {
 }
 
 #welcome-section p {
-  font-size: 1.5vw;
+  font-size: 1vw;
   color: black;
   margin-left: 2vw;
-  margin-top: 5vh;
+  margin-top: 2.5vh;
   max-width: 80vw;
 }
-
+/*
 #Personal-Photo {
   position: absolute;
   top: 40vh;
@@ -84,6 +84,7 @@ header h3 {
   width: 20vw;
   height: auto;
 }
+  */
 
 /* Projects Section */
 #projects {
@@ -123,7 +124,7 @@ header h3 {
 
 #projectsbar img {
   width: 30vw;
-  height: auto;
+  height: 40vh;
 }
 
 /* Skills Section */
